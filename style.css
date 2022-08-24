@@ -596,6 +596,33 @@ p {
     margin: 0 -15px;
 }
 
+.brands-card{
+    height: 300px;
+    width: 250px;
+    background-color: rgba(15, 15, 15, 1);
+    border-radius: 5px;
+    box-shadow: 15px 15px 0px #d65106;
+}
+
+.brands-content{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.brands-para{
+    margin: auto;
+    text-align: center;
+}
+
+.brands-imgs{
+    height: 80px;
+    width: 80px;
+}
+
 .brands-box {
     padding: 0 15px;
     display: flex;
