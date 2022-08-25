@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
 /* font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif; */
+@font-face{
+    src: url(assets/fonts/caesar.OTF);
+    font-family: caesar;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -537,12 +541,12 @@ ul {
 }
 
 .h1-title {
-    font-family: sans-serif;
+    font-family: caesar;
     font-size: 50px;
     line-height: 108px;
     text-transform: capitalize;
     margin-bottom: 25px;
-    font-weight: 900;
+    font-weight: 400;
 }
 
 
@@ -552,6 +556,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
 }
+
 
 p {
     color: white;
@@ -610,7 +615,7 @@ p {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .brands-para{
@@ -645,19 +650,104 @@ p {
 /* ******************** */
 
 .section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: relative;
+}
+
+.believe{
+    margin-top: 100px;
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.believe-container{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rating{
+    height: 250px;
+    width: 400px;
+}
+
+.believe-content > h1{
+    font-size: 54px;
+    font-weight: 200;
+    font-family: caesar;
+}
+
+.believe-content > h3{
+    font-family: 'Poppins';
+}
+
+.about{
+    margin-top: 50px;
+}
+
+.about-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-heading > h3{
+    font-family: caesar;
+    font-weight: 400;
+    font-size: 42px;
+    color: rgba(255, 0, 0, 1);
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 30px;
+}
+
+.about-vector{
+    height: 700px;
+}
+
+.about-card{
+    height: 600px;
+    width: 450px;
+    background-color: rgba(15, 15, 15, 1);
+    border-radius: 5px;
+    box-shadow: 15px 15px 0px #d65106;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.about-para{
+    width: 350px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.about-button{
+    background-color: red;
+    padding: 8px 20px;
+    color: white;
 }
 
 .sec-sub-title {
     text-transform: uppercase;
     display: inline-block;
-    background: #f3f3f5;
-    box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
     padding: 3px 20px;
     border-radius: 60px;
-    color: #ff8243;
+    color: red;
     font-size: 14px;
 }
 
