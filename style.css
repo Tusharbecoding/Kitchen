@@ -850,12 +850,12 @@ p {
     margin-bottom: 80px;
 }
 
+
 .menu-tab ul {
     padding: 10px;
     display: inline-block;
     border-radius: 60px;
-    background: linear-gradient(145deg, #ececec, #ffffff);
-    box-shadow: 28px 28px 55px #d4d4d4, -28px -28px 55px #ffffff;
+    background: whitesmoke;
     position: relative;
     z-index: 2;
 }
@@ -866,7 +866,7 @@ p {
     font-size: 18px;
     line-height: normal;
     cursor: pointer;
-    padding: 10px 26px;
+    padding: 10px 40px;
     border-radius: 30px;
     transition: 0.3s;
     justify-content: center;
@@ -888,8 +888,20 @@ p {
 }
 
 .menu-tab ul .filter-active {
-    color: #ffffff;
-    background: linear-gradient(145deg, #e3a92b, #ffc933);
+    color: red;
+    background: transparent;
+    border-bottom: 2px solid red;
+    border-radius: 0px;
+}
+
+.menu-tab ul .filter-active li{
+    color: red;
+}
+
+.menu-title{
+    font-family: caesar;
+    font-size: 42px;
+    font-weight: 400;
 }
 
 .menu-list-row .bydefault_show .dish-box-wp {
@@ -901,9 +913,9 @@ p {
 }
 
 .dish-box {
-    border-radius: 30px;
-    background: linear-gradient(145deg, #ececec, #ffffff);
-    box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+    border-radius: 10px;
+    background-color: rgba(15, 15, 15, 1);
+    box-shadow: 15px 15px 0px #d65106;
     display: flow-root;
     padding: 0 30px 40px;
     padding-top: 0;
@@ -921,7 +933,6 @@ p {
 }
 
 .dist-img img {
-    box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
     border-radius: 50%;
     overflow: hidden;
 }
