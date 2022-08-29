@@ -176,3 +176,14 @@ window.addEventListener("load", function () {
     loader.style.display = "none";
 }
 );
+
+let activeContainer = document.getElementById("active-container");
+let activeClass = activeContainer.getElementByClassName("active-class")
+for (let i = 0; i < activeClass.length; i++) {
+    activeClass[i].addEventListener('click', function(){
+        let current = document.getElementByClassName("active")
+        current[0].className = current[0].className.replace("active");
+        this.className += "active";
+    })
+    
+}
