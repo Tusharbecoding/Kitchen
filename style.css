@@ -921,7 +921,7 @@ p {
     padding-top: 0;
     margin: 130px 0 30px;
     transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
-    height: 350px;
+    height: 400px;
 }
 
 .dish-box:hover {
@@ -931,6 +931,12 @@ p {
 .dist-img {
     margin-top: -130px;
     margin-bottom: 30px;
+}
+
+.dish-content{
+    color: white;
+    font-family: 'Poppins';
+    padding: 20px 0;
 }
 
 .dist-img img {
@@ -2433,4 +2439,13 @@ footer{
     .blog-box {
         padding: 20px;
     }
+}
+
+#preloader{
+    background: #fff url('./Pizza.gif') no-repeat center;
+    background-size: 5%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }

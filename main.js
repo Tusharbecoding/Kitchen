@@ -171,3 +171,8 @@ jQuery(window).on('load', function () {
     }
 });
 
+let loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+    loader.style.display = "none";
+}
+);
