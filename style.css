@@ -362,7 +362,7 @@ ul {
         transform: translateY(-100%);
         background-image: url(assets/images/blog-pattern-bg.png);
         background-position: center;
-        background-color: rgba(49, 49, 49, 0.8);
+        background-color: rgba(49, 49, 49, 1);
     }
     .main-navigation .menu li {
         display: block;
