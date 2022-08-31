@@ -2497,10 +2497,10 @@ footer{
 }
 
 #preloader{
-    background: #fff url('./Pizza.gif') no-repeat center;
-    background-size: 5%;
+    background: rgb(229, 229, 229) url('./loader.gif') no-repeat center;
+    background-size: 25%;
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 999999;
 }
