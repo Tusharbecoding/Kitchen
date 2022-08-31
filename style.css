@@ -310,6 +310,9 @@ ul {
     .main-navigation .menu li {
         margin: 0 3px;
     }
+    .banner-shape-1 img{
+        left: 90%;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -328,6 +331,9 @@ ul {
     }
     .header-search-form .form-input {
         width: 170px;
+    }
+    .banner-shape-1 img{
+        left: 90%;
     }
 }
 
@@ -564,7 +570,7 @@ ul {
     top: 180px;
     max-width: 250px;
     pointer-events: none;
-        
+
 }
 
 .banner-shape-2 {
