@@ -2497,7 +2497,7 @@ footer{
 }
 
 #preloader{
-    background: rgb(229, 229, 229) url('./loader.gif') no-repeat center;
+    background: rgb(228, 225, 235) url('./loader.gif') no-repeat center;
     background-size: 25%;
     height: 100vh;
     width: 100%;
