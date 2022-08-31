@@ -21,6 +21,63 @@ body {
     left: auto;
 }
 
+#whatsapp .wtsapp{
+    position: fixed;
+    transform: all 0.5s ease;
+    background-color: #22c45e;
+    display: block;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    border-right: none;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    bottom: 70px;
+    left: 30px;
+    border: 0;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.wtsapp > i{
+    color: white;
+    -webkit-animation: phone 1500ms ease infinite;
+    animation: phone 1500ms ease infinite;
+}
+
+#whatsapp .wtsapp:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color: #22c45e;
+    border-radius: 50%;
+    -webkit-animation: pulse-border 1500ms ease-out infinite;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+#whatsapp .wtsapp:focus{
+    border: none;
+    outline: none;
+}
+
+@keyframes phone{
+    50% {transform: rotate(180deg);}
+}
+
+@keyframes pulse-border{
+    0%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1); opacity: 1;}
+    100%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5); opacity: 0;}
+}
+
 #active{
     color: rgb(255, 0, 0, 1);
 }
@@ -1645,45 +1702,34 @@ form {
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
-  border-radius: 25px;
+  border-radius: 10px;
   transition: 0.3s;
+}
+
+::placeholder{
+    color: white;
 }
 
 textarea.input {
   padding: 0.8rem 1.2rem;
   min-height: 150px;
-  border-radius: 22px;
+  border-radius: 10px;
   resize: none;
   overflow-y: auto;
 }
 
-.input-container label {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-  padding: 0 0.4rem;
-  color: #fafafa;
-  font-size: 0.9rem;
-  font-weight: 400;
-  pointer-events: none;
-  z-index: 1000;
-  transition: 0.5s;
-}
 
-.input-container.textarea label {
-  top: 1rem;
-  transform: translateY(0);
-}
+
+
 
 .btn {
   padding: 0.6rem 1.3rem;
   background-color: #fff;
   border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: #1abc9c;
+  color: red;
   line-height: 1;
-  border-radius: 25px;
+  border-radius: 5px;
   outline: none;
   cursor: pointer;
   transition: 0.3s;
