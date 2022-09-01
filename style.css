@@ -490,8 +490,22 @@ ul {
     }
     .brands-row{
         display: flex;
-        gap: 100px;
-        padding-right: 110px;
+        gap: 50px;
+    }
+    .heroin{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-text > p{
+        width: 60%;
+        font-size: 18px;
     }
 }
 
@@ -514,8 +528,25 @@ ul {
     }
     .brands-row{
         display: flex;
-        gap: 100px;
-        padding-right: 110px;
+        gap: 50px;
+    }
+    .heroin{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-text > p{
+        width: 60%;
+        font-size: 18px;
+    }
+    .brands-card{
+        background-color: blue;
     }
 }
 
