@@ -477,6 +477,19 @@ ul {
     }
 }
 
+@media (max-width: 670px){
+    .rating{
+        height: 200px;
+        width: 350;
+    }
+    .believe-content > h1{
+        font-size: 12px;
+    }
+    .believe-content > h3{
+        font-size: 24px;
+    }
+}
+
 @media (max-width: 575px) {
     .container, .container-fluid {
         padding: 0 30px;
@@ -795,6 +808,8 @@ p {
 }
 
 .rating{
+    padding-top: 5px;
+    padding-bottom: 5px;
     height: 250px;
     width: 400px;
 }
