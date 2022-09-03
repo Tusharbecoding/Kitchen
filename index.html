@@ -20,8 +20,22 @@
 </head>
 
 <body class="body-fixed">
+    <div id="animated-card" style="left:-300px;">
+        <div class="wtscross" onclick="setOldImage()">
+            <img src="./assets/images/cross.svg" alt="">
+        </div>
+        <div class="wtsicon">
+            <img src="./img/whatsapp.svg" alt="">
+        </div>
+        <div class="wtscall">
+            Call Now on
+        </div>
+        <div class="wtsphone">
+            9817347150
+        </div>
+    </div>
     <div id="preloader"></div>
-    <div id="whatsapp">
+    <div id="whatsapp" onmouseover="setNewImage()" >
         <a href="#" target="_blank" id="toggle1" class="wtsapp">
             <i class="uil uil-phone"></i>
         </a>

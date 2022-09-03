@@ -177,13 +177,22 @@ window.addEventListener("load", function () {
 }
 );
 
-let activeContainer = document.getElementById("active-container");
-let activeClass = activeContainer.getElementByClassName("active-class")
-for (let i = 0; i < activeClass.length; i++) {
-    activeClass[i].addEventListener('click', function(){
-        let current = document.getElementByClassName("active")
-        current[0].className = current[0].className.replace("active");
-        this.className += "active";
-    })
-    
+// let ul = document.querySelector('ul');
+// 		var li = document.querySelectorAll('li');
+
+// 		li.forEach(el => {
+
+// 			el.addEventListener('click', function(){
+// 			ul.querySelector('.active-link').classList.remove('active-link');
+ 			
+//  				el.classList.add('active-link');
+//  			}); 			
+// 		});
+
+function setNewImage() {
+    document.getElementById("animated-card").style.left = "0px";
+}
+
+function setOldImage() {
+    document.getElementById("animated-card").style.left = "-300px";
 }

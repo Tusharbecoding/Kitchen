@@ -21,6 +21,50 @@ body {
     left: auto;
 }
 
+#animated-card{
+    height: 250px;
+    width: 250px;
+    position: fixed;
+    background:  url('./assets/images/fire.gif') center no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    bottom: 0;
+    z-index: 999999999;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.wtscross{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.wtscross > img{
+    padding: 2px;
+    height: 20px;
+    width: 20px;
+}
+
+.wtscall{
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: caesar;
+}
+
+.wtsphone{
+    color: yellow;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: caesar;
+    letter-spacing: 4px;
+}
+
 #whatsapp .wtsapp{
     position: fixed;
     transform: all 0.5s ease;
@@ -477,18 +521,7 @@ ul {
     }
 }
 
-@media (max-width: 670px){
-    .rating{
-        height: 200px;
-        width: 350;
-    }
-    .believe-content > h1{
-        font-size: 12px;
-    }
-    .believe-content > h3{
-        font-size: 24px;
-    }
-}
+
 
 @media (max-width: 575px) {
     .container, .container-fluid {
@@ -740,6 +773,7 @@ p {
 }
 
 .brands-card{
+    display: flex;
     height: 300px;
     width: 250px;
     background-color: rgba(15, 15, 15, 1);
@@ -785,6 +819,23 @@ p {
     opacity: 0.7;
 }
 
+@media (max-width: 1400px){
+    .brands-row{
+        gap: 30px;
+    }
+}
+
+@media (max-width: 435px){
+    .brands-card{
+        height: 260px;
+        width: 220px;
+    }
+    .brands-para{
+        width: 95%;
+        font-size: 14px;
+    }
+}
+
 /* ******************** */
 
 .section {
@@ -822,6 +873,33 @@ p {
 
 .believe-content > h3{
     font-family: 'Poppins';
+}
+
+@media (max-width: 435px){
+    .believe-container{
+        flex-direction: column-reverse;
+        gap: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 435px){
+    .believe-container{
+        flex-direction: column-reverse;
+        gap: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 670px){
+    .believe-container{
+        flex-direction: column-reverse;
+        gap: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 .about{
@@ -2578,3 +2656,4 @@ footer{
     position: fixed;
     z-index: 999999;
 }
+
