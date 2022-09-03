@@ -51,6 +51,7 @@ body {
 }
 
 .wtscall{
+    display: flex;
     color: white;
     font-weight: 600;
     font-size: 24px;
@@ -58,12 +59,27 @@ body {
 }
 
 .wtsphone{
+    display: flex;
     color: yellow;
     font-size: 28px;
     font-weight: 700;
     font-family: caesar;
     letter-spacing: 4px;
 }
+
+@media (max-width: 300px){
+    #animated-card{
+        height: 180px;
+        width: 180px;
+    }
+    .wtscall{
+        font-size: 20px;
+    }
+    .wtsphone{
+        font-size: 22px;
+    }
+}
+
 
 #whatsapp .wtsapp{
     position: fixed;
