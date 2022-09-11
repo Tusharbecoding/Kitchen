@@ -61,7 +61,7 @@ body {
 .wtsphone{
     display: flex;
     color: yellow;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 700;
     font-family: caesar;
     letter-spacing: 4px;
@@ -76,8 +76,40 @@ body {
         font-size: 20px;
     }
     .wtsphone{
-        font-size: 22px;
+        font-size: 12px;
     }
+}
+
+
+#history{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    top: 15%;
+    left: 30%;
+    height: 70vh;
+    width: 80vh;
+    background-color: blue;
+    z-index: 999999999;
+    background-color: #010101;
+    border-radius: 10px;
+    box-shadow: 15px 15px  red;
+    align-items: center;
+    gap: 20px;
+    transition: 1s ease;
+}
+
+.history-title{
+    font-size: 26px;
+    font-family: caesar;
+    color: red;
+    padding-top: 10px;
+}
+
+.history-content{
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
 }
 
 
@@ -646,7 +678,7 @@ ul {
 
 .main-banner {
     padding: 200px 0 300px;
-    min-height: 100vh;
+    min-height: 60vh;
     position: relative;
 }
 
@@ -803,7 +835,6 @@ p {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 20px;
 }
 
 .brands-para{
@@ -814,6 +845,11 @@ p {
 .brands-imgs{
     height: 80px;
     width: 80px;
+}
+
+.brands-title{
+    display: flex;
+    text-align: center;
 }
 
 .brands-box {
@@ -838,6 +874,38 @@ p {
 @media (max-width: 1400px){
     .brands-row{
         gap: 30px;
+    }
+}
+
+@media (max-width: 1200px){
+    .brand-row{
+        justify-content: center;
+    }
+    .brands-imgs{
+        height: 60px;
+        width: 60px;
+    }
+    .brand-row-inner{
+        margin-left: 0;
+    }
+    .brands-title > h4, h5{
+        font-size: 18px;
+    }
+    .brands-para{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 991px){
+    .brands-para{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px){
+    .brands-para{
+        font-size: 13px;
+        line-height: 20px;
     }
 }
 
@@ -889,6 +957,17 @@ p {
 
 .believe-content > h3{
     font-family: 'Poppins';
+}
+
+.uber-btn{
+    background: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.uber-btn:hover{
+    transition: 0.5s;
+    scale: 1.1;
 }
 
 @media (max-width: 435px){
@@ -943,7 +1022,8 @@ p {
     padding-top: 30px;
 }
 
-.about-vector{
+.about-img{
+    display: flex;
     height: 700px;
 }
 
@@ -971,7 +1051,7 @@ p {
     width: 380px;
     font-family: 'Poppins';
     font-size: 16px;
-    line-height: 30px;
+    line-height: 40px;
 }
 
 .about-button{
@@ -1003,7 +1083,8 @@ p {
         gap: 0px;
     }
     .about-para{
-        padding: 0 30px;
+        padding: 0 25px;
+        line-height: 38px;
     }
 }
 
@@ -1611,6 +1692,10 @@ p {
     color: #ffffff !important;
 }
 
+.tiktok{
+    color: rgb(225, 146, 0);
+}
+
 /* *************** */
 
 
@@ -2074,8 +2159,8 @@ footer{
 .footer-socialnav{
     display: flex;
     position: relative;
+    justify-content: center;
     top: 20%;
-    left: 38.5%;
 }
 
 .footer-flex-box {
@@ -2155,6 +2240,12 @@ footer{
 .scrolltop:hover {
     box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
     color: #0d0d25;
+}
+
+@media (max-width: 400px){
+    .footer-logo{
+        left: 38%;
+    }
 }
 
 /* **************** responsiveness ***************** */

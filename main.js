@@ -196,3 +196,11 @@ function setNewImage() {
 function setOldImage() {
     document.getElementById("animated-card").style.left = "-300px";
 }
+
+function setOurHistory() {
+    document.getElementById("history").style.display = 'flex';
+}
+
+function setOurHistoryOff() {
+    document.getElementById("history").style.display = 'none';
+}
