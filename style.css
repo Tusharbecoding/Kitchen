@@ -2209,9 +2209,11 @@ footer{
 }
 
 .copyright-text p {
-    margin: 0;
-    margin-top: 10px;
-    margin-left: 210px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align:center;
+    margin-top: 16px;
 }
 
 .name {
@@ -2242,11 +2244,75 @@ footer{
     color: #0d0d25;
 }
 
-@media (max-width: 400px){
+
+@media (max-width: 1200px){
+    .food-nav-menu > li{
+        font-size: 13px;
+    }
     .footer-logo{
-        left: 38%;
+        left: 46.5%;
+    }
+    
+}
+
+@media (max-width: 991px){
+    .scrolltop{
+      top: 10%;  
+    }
+    .footer-info{
+        top: 40px;
+    }
+    .food-nav-menu > li{
+        text-align: center;
     }
 }
+
+@media (max-width: 778px){
+    .footer-nav>ul{
+        gap: 75px;
+    }
+}
+
+@media (max-width: 650px){
+    .footer-nav>ul{
+        gap: 55px;
+    }
+}
+
+@media (max-width: 556px){
+    .footer-nav>ul{
+        gap: 40px;
+    }
+    .footer-logo{
+        left: 42%;
+    }
+    .scrolltop{
+        display: none;
+    }
+}
+
+@media (max-width: 479px){
+    .footer-nav>ul{
+        gap: 35px;
+    }
+    .footer-nav>ul>li{
+        font-size: 12px;
+    }
+    .footer-logo{
+        left: 41%;
+    }
+    
+}
+
+
+@media (max-width: 428px){
+    .footer-nav>ul{
+        gap: 25px;
+    }
+}
+
+
+
 
 /* **************** responsiveness ***************** */
 
@@ -2424,9 +2490,7 @@ footer{
     .newsletter-box {
         padding: 40px;
     }
-    .footer-info {
-        margin-bottom: 50px;
-    }
+    
     .footer-flex-box {
         display: block;
         margin: 0;
@@ -2618,10 +2682,7 @@ footer{
     .container, .container-fluid {
         padding: 0 15px;
     }
-    .section {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    
     .newsletter-form button {
         position: unset;
         transform: translate(0);

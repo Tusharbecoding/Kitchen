@@ -540,7 +540,7 @@
                             <span class="circle one"></span>
                             <span class="circle two"></span>
 
-                            <form action="index.html" autocomplete="off">
+                            <form action="https://script.google.com/macros/s/AKfycbzHmtMTVMdQekWnTeKpCDBgopOkrPKuwOV7QCJlVIZVRwIb700wP_WgdghwRoVlBCm6Fg/exec" name="Tanu's Kitchen" method="post" autocomplete="off">
 
                                 <div class="input-container">
                                     <input type="text" name="name" class="input" placeholder="Name" />
@@ -598,7 +598,7 @@
                                         </ul>
                                     </div>
                                     <div class="social-icon footer-info footer-socialnav">
-                                        <ul>
+                                        <ul class="ul-socials" >
                                             <li>
                                                 <a href="#">
                                                     <i class="uil uil-facebook-f"></i>
@@ -607,6 +607,11 @@
                                             <li>
                                                 <a href="#">
                                                     <i class="uil uil-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="uil uil-snapchat-ghost"></i>
                                                 </a>
                                             </li>
                                             <li>
@@ -688,8 +693,19 @@
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <!-- custom js  -->
 
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzHmtMTVMdQekWnTeKpCDBgopOkrPKuwOV7QCJlVIZVRwIb700wP_WgdghwRoVlBCm6Fg/exec'
+        const form = document.forms['Tanu\'s Kitchen']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
     <script src="main.js"></script>
-
 </body>
 
 </html>
