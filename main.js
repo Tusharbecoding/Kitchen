@@ -204,3 +204,13 @@ function setOurHistory() {
 function setOurHistoryOff() {
     document.getElementById("history").style.display = 'none';
 }
+
+function setMenu() {
+    document.getElementById("menuTanu").style.display = 'flex';
+    console.log('menu');
+}
+
+function setMenuOff() {
+    document.getElementById("menuTanu").style.display = 'none';
+    console.log('menuT');
+}
